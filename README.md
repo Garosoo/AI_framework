@@ -1,2 +1,2 @@
 # AI_framework
-This is for final project of "AI Framework" class
+This repository is for the final project of "AI Framework" class
