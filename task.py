@@ -28,8 +28,8 @@ def make_input(B=1, H=32, W=32, dx=1e-3, dy=1e-3, reg=1e-8,
     k = generate_perlin_terrain(B=B, H=H, W=W, scale=6.0, k_scale=300.0, seed=seed)
     k = k - k.min() + 1.0
     q = torch.zeros(B, H, W, dtype=torch.float32)
-    h0, h1 = H // 3, 2 * H // 3
-    w0, w1 = W // 3, 2 * W // 3
+    h0, h1 = H // 3, 2 * H // 3     # Simple example which can be changed for other topologies similar to real problems.
+    w0, w1 = W // 3, 2 * W // 3     # Simple example which can be changed for other topologies similar to real problems.
 
     T_bc = torch.zeros(B, H, W, dtype=torch.float32)
     for b in range(B):
